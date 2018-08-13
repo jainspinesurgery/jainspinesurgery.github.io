@@ -1,0 +1,64 @@
+# Site settings
+title: Shikha Gupta | Physiotherapist South Bangalore
+description: "Best Physiotherapist in South Bangalore, Arkere, J P Nagar, Bannerghatta road, close to L&T South City, Brigade Gardenia, Brigade Millenium, Elita Promenade"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: svg/min/logo.svg
+
+# Hero
+hero: 
+    hero_img: hero.jpg
+    hero_title: 
+    hero_description: Physiotherapy consultation in South Bangalore - Arekere, JP Nagar, Bannerghatta Road, LnT South City, Brigade Millenium, Brigade Gardenia, Elita Promenade & surrounding areas
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+contact:
+    phone: 8105842891
+    emergency: 7019250958
+    email: shikhagupta1707@gmail.com
+    address: "Ortho-Neuro Care Clinic, #433,Laxmi Layout, 8th Cross,Arekere Micro Layout, Bannergatta Road,near Pragati Century Apartment, Bangalore - 560076"
+
+# Opening hours
+monday_saturday: 9:00AM - 9:00PM
+sunday: On Appointment
+
+# Testimonials
+testimonials:
+    testimonials_img: parallax.jpg
+
+# Map
+map:
+    zoom: 15
+    address: 133, Millennium Ave, JP Nagar 7th Phase, Arekere, Bengaluru, Karnataka 560076 
+    address_details: svg/min/Shikha.jpg
+
+# Social settings
+facebook: https://facebook.com/physioknow
+twitter: http://twitter.com
+instagram: http://instagram.com
+youtube: http://youtube.com
+skype: skype:shikhaarung
+feed: yes
+
+# Footer
+copyright: ©  2017 PhysioKnow - All rights reserved
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics: 
+google_verification:

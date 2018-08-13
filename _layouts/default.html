@@ -1,0 +1,23 @@
+{% include doctype-head.html %}
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    {% include svg-defs.svg %}
+    <!--[if lt IE 10]>
+        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
+    <![endif]-->
+
+    {% include header.html %}
+ 
+        {{ content }}
+           
+    {% include footer.html %}
+    
+    {% if site.analytics %}
+        {% include analytics.html %}
+    {% endif %}
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAGwm1dgATmVb4Zdx8BbjzWz4KmNLQaWY&callback=initDefaults"  type="text/javascript"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Cw_UtPfmM2D_nWemb3lcLNnvevYdox4&callback=initMap"  type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/js/all.min.js"></script>
+</body>
+</html>

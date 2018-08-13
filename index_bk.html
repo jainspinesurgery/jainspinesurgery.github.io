@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Start Hero -->
-<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') repeat-x; background-size: 50%; background-position: 0px -100px;">
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') repeat; background-size: 50%; background-position: 0px -100px">
     <div class="hero-content">
         <div class="container-fluid">
             <div class="hero-content-inner">
@@ -17,7 +17,6 @@ layout: default
         
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
             <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
-            <!--
             <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
                 <div class="form-field">
                     <input name="name" type="text" placeholder="Name" required>
@@ -33,23 +32,6 @@ layout: default
                 </div>
                 <input type="submit" class="btn btn-default" value="Send">
             </form>
-            -->
-	   <form action="https://formspree.io/shikhagupta1707@gmail.com"
-      		method="POST">
-            <div class="form-field">
-                <input type="text" name="name" placeholder="Name">
-            </div>
-            <div class="form-field">
-    		    <input type="email" name="_replyto" placeholder="Your Email">
-            </div>
-	    <div class="form-field">
-		    <input type="phone" name="phone" placeholder="Your Phone">
-	    </div>
-            <div class="form-field">
-    		    <textarea type="message" name="message" placeholder="Message"></textarea>
-            </div>
-    		<input type="submit" value="Send">
-	   </form>
         </div>
 
     </div>
@@ -57,7 +39,7 @@ layout: default
 <!-- End Hero -->
 
 <!-- Start 3 columns -->
-<div id=contact class="three-shade-col">
+<div class="three-shade-col">
     <div class="col-sm-4">
         <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
         <h3>Contact Us</h3>
@@ -73,13 +55,13 @@ layout: default
         <table>
             <tbody>
                 <tr>
-                    <td>Monday –Saturday</td>
-                    <td>{{ site.monday_saturday }}</td>
+                    <td>Monday – Friday</td>
+                    <td>{{ site.monday_friday }}</td>
                 </tr>
-                <!--<tr>
+                <tr>
                     <td>Saturday</td>
                     <td>{{ site.saturday }}</td>
-                </tr> -->
+                </tr>
                 <tr>
                     <td>Sunday</td>
                     <td>{{ site.sunday }}</td>
@@ -93,9 +75,6 @@ layout: default
             <p>
                 {{ site.contact.address }}
             </p>
-	    <p>
-		<b><a href="https://goo.gl/maps/DYhTnionW6J2" style="color:#000000">Click to open in google map</a></b>
-	    </p>
     </div>
 </div>
 <!-- End 3 columns -->
@@ -107,17 +86,17 @@ layout: default
 
         <div class="row">
             <div class="col-sm-6">
-                <h3>Welcome to PhysioKnow</h3>
-                <p>PhysioKnow is founded by Dr. Shikha Gupta who is professional physiotherapist in Bangalore with a view to have easily accessible platform for all Physiotheraphy related queries </p>
+                <h3>Welcome to DentistSmile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
 
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-user-md"><use xlink:href="#icon-user-md"></use></svg>
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Provide consultancy and physiotherapy for patients of all age groups</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
                     </div>
                 </div>
 
@@ -128,18 +107,18 @@ layout: default
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Home visit facility is available on appointment basis</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
                     </div>
                 </div>
 
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-ambulance"><use xlink:href="#icon-ambulance"></use></svg>
+                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Home delivery of Orthosis, walking aids and other physiotherapy related accessories on requirement basis</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
                     </div>
                 </div>
             </div>
@@ -172,7 +151,7 @@ layout: default
 <!-- End Treatments -->
 
 <!-- Start Our team -->
-<div id="team" class="team" style='text-align: left'>
+<div id="team" class="team"> 
     <h2 class="section-title">Our Team</h2> 
     <div id="team-carousel">
     {% for member in site.data.team %}
@@ -236,22 +215,6 @@ layout: default
 </div>
 <!-- End Gallery -->
 
-<!-- Start Map-->
-<!-- <div style=text-centre>
-<p style="text-align:center"><a href="https://goo.gl/maps/DYhTnionW6J2" style="#337ab7">Click to open in google map</a></p> </div>
-<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>">
-</div> -->
+<!-- Start Map -->
+<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
 <!-- End Map -->
-
-<!-- Start Blog --> 
-<div id="blog" class="treatments">
-    <div class="container-fluid">
-	<h2 class="section-title">Knowledge Base</h2>
-	<ul class="posts">
-
-	{% for post in site.posts %}
-		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	{% endfor %}
-	</ul>
-    </div>
-</div>
